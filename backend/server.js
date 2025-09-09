@@ -5,7 +5,7 @@ const connectDB = require('./db');
 const todoRoutes = require('./routes/todos');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 // Connect to database
 connectDB();

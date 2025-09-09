@@ -1,5 +1,5 @@
 // API Configuration
-const API_URL = 'http://localhost:3000/todos'; // Should be exactly this
+const API_URL = 'http://localhost:5000/todos'; // Should be exactly this
 
 // DOM Elements
 const todoInput = document.getElementById('todoInput');
@@ -592,7 +592,7 @@ function exportData() {
     document.body.removeChild(link);
     
     showError('Todos exported successfully!', false);
-    setTimeout(hideError, 3000);
+    setTimeout(hideError, 5000);
 }
 
 function importData(event) {
@@ -650,7 +650,7 @@ function importData(event) {
             await loadTodos();
             
             showError('Todos imported successfully!', false);
-            setTimeout(hideError, 3000);
+            setTimeout(hideError, 5000);
             
         } catch (err) {
             showError('Failed to import todos. Please check the file format.');
